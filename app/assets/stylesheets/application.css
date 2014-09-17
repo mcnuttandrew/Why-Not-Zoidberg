@@ -13,3 +13,47 @@
  *= require_tree .
  *= require_self
  */
+
+/*html * {
+	border: thin solid blue;
+}
+*/
+
+h1 {
+	font-size: 4em;
+	font-family: Copperplate;
+	display: inline-block;
+	width: 45%;
+}
+
+img {
+	display: inline-block;
+	width: 45%;
+}
+
+#head {
+	display: block;
+	max-width: 600px;
+	margin: auto;
+	border: thick solid black;
+}
+
+.buttons {
+	display: block;
+	width: 30%;
+	margin: auto;
+}
+
+#buttom_buttons {
+	position: relative;
+	margin-left: -2%;
+}
+
+#ipsum{
+	position: relative;
+	display: block;
+	/*margin-left: 20%;
+	margin-right: 10%;*/
+	margin: auto;
+	max-width: 600px;
+}

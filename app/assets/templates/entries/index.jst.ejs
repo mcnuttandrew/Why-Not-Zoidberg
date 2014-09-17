@@ -1,3 +1,21 @@
-<%for(var i = 0; i < collection.length; i++){%>
-	<%= collection[i].attributes.content%>
-<%}%>
+<div class="buttons">
+	<div id="top_buttons">
+		<button class="button" id="fewerS">Fewer Sentances</button>
+		<button class="button" id="moreS">More Sentances</button>
+	</div>
+	<div id="buttom_buttons">
+		<button class="button" id="fewerP">Fewer Paragraphs</button>
+		<button class="button" id="moreP">More Paragraphs</button>
+	</div>
+</div>
+<div id="ipsum">
+	<%var numSents =  model.attributes.size%>
+	<%var numParagraphs =  model.attributes.paragraphs%>
+	<%for(var i = 0; i < collection.length; i++){%>
+		<% if( i % 8 === 0 && numParagraphs > 1 && i > 9) {%>
+			<% numParagraphs = numParagraphs - 1%>
+			<br><br>
+		<%} else {%>
+			<%= collection[i].attributes.content%>
+	<%}}%>
+</div>
