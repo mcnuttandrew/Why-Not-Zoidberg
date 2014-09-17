@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  resources :sentances, only: [:index, :show]#, :defaults => {:format => 'json'}
+  # root :to => "site#root"
+  
+  namespace :api, :defaults => {:format => 'json'} do
+    resources :sentances, only: [:index, :show]
+  end
+  
+  root to: "root#index"
 end

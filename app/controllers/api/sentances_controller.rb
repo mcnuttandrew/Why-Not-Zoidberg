@@ -1,4 +1,4 @@
-class SentancesController < ApplicationController
+class Api::SentancesController < ApplicationController
   def show
       @sentance = Sentance.find(params[:id])
       render :json => @sentance
