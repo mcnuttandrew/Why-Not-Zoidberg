@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140917044528) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "sentances", force: true do |t|
     t.text     "content",    null: false
     t.datetime "created_at"
