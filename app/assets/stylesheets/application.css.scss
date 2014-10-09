@@ -14,109 +14,45 @@
  *= require_self
  */
 
-/*html * {
-	border: thin solid blue;
-}
-*/
 
 
-
-
-$gray-darker:            lighten(#000, 13.5%); // #222
-$gray-dark:              lighten(#000, 20%);   // #333
-$gray:                   #777; // #555
-$gray-light:             lighten(#000, 60%);   // #999
-$gray-lighter:           lighten(#000, 93.5%); // #eee
-
-$brand-primary:         #EB6864;
-$brand-success:         #22B24C;
-$brand-info:            #369;
-$brand-warning:         #F5E625;
-$brand-danger:          #F57A00;
-
-
-$font-family-sans-serif:  "News Cycle", "Arial Narrow Bold", sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif;
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-family-base:        $font-family-serif;
-
-$font-size-base:          15px;
-$font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
-$font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
-
-$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
-$font-size-h5:            $font-size-base;
-$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
-
-
-$jumbotron-padding:              30px;
-$jumbotron-color:                inherit;
-$jumbotron-bg:                   $gray-lighter;
-$jumbotron-heading-color:        inherit;
-$jumbotron-font-size:            ceil(($font-size-base * 1.5));
-
-//$import "bootstrap-sprockets"; 
 @import "bootstrap";
 
-//head {
-//	width: 210px;
-//	height: 190px;
-//	transform: rotate(180deg);
-//	border: thin solid red;
-//}
-
-.jumbotron {
-
+.content {
+//	background-color: white;
+	max-width: 50%;
+	margin-top: 2%;
+	margin-bottom: 10%;
+	margin-right: 1%;
+  position: relative;
+  border: 5px solid #000000;
+	box-shadow:
+	  0 0 0 10px hsl(0, 0%, 80%),
+	  0 0 0 15px hsl(0, 0%, 90%);
+	outline: 5px solid #FF6666;
 }
 
-
-
-//
-h1 {
-	font-size: 5em;
-	display: inline-block;
-	width: 45%;
+div#ipsum {
+	height: 440px;
+	overflow-y: scroll;
+	border: 5px solid gray;
+	outline: 5px solid black;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	
 }
-//
-//img {
-//	display: inline-block;
-//	width: 45%;
-//}
-//
-//#head {
-//	display: block;
-//	max-width: 600px;
-//	margin: auto;
-//	border: thick solid black;
-//}
-//
-//.buttons {
-//	display: block;
-//	width: 30%;
-//	margin: auto;
-//}
-//
-///*#buttom_buttons {
-//	position: relative;
-//	margin-left: -2%;
-//}
-//*/
-//#ipsum{
-//	position: relative;
-//	display: block;
-//	/*margin-left: 20%;
-//	margin-right: 10%;*/
-//	margin: auto;
-//	max-width: 600px;
-//}
-//
-//.button {
-//	margin: 0;
-//	display: inline-block;
-//	width: 100px;
-//	height: 100px;
-//}
+
+.zoid-image {
+	min-height: 400px;
+//	width: 50%;
+
+	background-image: url('whynot.png');
+	background-size: cover;
+	background-position: center; // or center center
+	background-repeat: no-repeat;
+}
+
+button.btn {
+	background-color: #FF6666;
+	border: none;
+}

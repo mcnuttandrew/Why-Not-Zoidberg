@@ -3,7 +3,7 @@ class Api::SentancesController < ApplicationController
       @sentance = Sentance.find(params[:id])
       render :json => @sentance
   end
-
+  
   def index
     @sentances = Sentance.all
     render :json => @sentances
