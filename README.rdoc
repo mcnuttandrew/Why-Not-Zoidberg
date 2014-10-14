@@ -1,3 +1,3 @@
 == README
 
-This application is a generator of random filler content, ala Lorem Ipsum, but filled exclusively with quotes from Dr. Zoidberg from Futurama. The data was scraped from the transcripts provided by infosphere.com. 
+This application is a generator of random filler content, ala Lorem Ipsum, but filled exclusively with quotes from Dr. Zoidberg from Futurama. The data was lovingly scraped from the transcripts provided by infosphere.com. 
