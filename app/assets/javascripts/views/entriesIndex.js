@@ -6,8 +6,6 @@ Zoidberg.Views.entriesIndex = Backbone.View.extend({
 	},
 	
 	events: {
-		"click #fewerS": "fewerSentances",
-		"click #moreS": "moreSentances",
 		"click #fewerP": "fewerParagraphs",
 		"click #moreP": "moreParagraphs"
 	},
@@ -19,27 +17,6 @@ Zoidberg.Views.entriesIndex = Backbone.View.extend({
 		 });
 		this.$el.html(renderedContent);
 		return this;
-	},
-	
-	fewerSentances: function(){
-		var minusOne = parseInt(this.model.attributes.size, 10) - 1;
-		if(this.model.attributes.paragraphs){
-			var locat = "/" + minusOne + "/" + this.model.attributes.paragraphs;
-		} else {
-			var locat = "/" + minusOne + "/" + 1;
-		}
-		Backbone.history.navigate(locat, {trigger: true});
-	},
-	
-	moreSentances: function(){
-		var plusOne = parseInt(this.model.attributes.size, 10) + 1;
-		var locat;
-		if(this.model.attributes.paragraphs){
-			locat = "/" + plusOne + "/" + this.model.attributes.paragraphs;
-		} else {
-			locat = "/" + plusOne + "/" + 1;
-		}
-		Backbone.history.navigate(locat, {trigger: true});
 	},
 	
 	fewerParagraphs: function(){
@@ -56,8 +33,6 @@ Zoidberg.Views.entriesIndex = Backbone.View.extend({
 		} else {
 			var minusOne = 1;
 		}
-		
-		
 		var locat = "/" + droppedValue + "/" + minusOne;
 		Backbone.history.navigate(locat, {trigger: true});
 	},
